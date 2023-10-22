@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+}
+
+html,
+body,
+main {
+    height: 100%;
+}
+
+main {
+    align-items: center;
+}
+
+.iframe--wrapper {
+    margin: 0 auto;
+    background-color: #1f2020;
+    padding: 1.5rem;
+    border-radius: 0.2rem;
+    width: 60%;
+    position: relative;
+}
+
+.link--wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+span {
+    background-color: #17a2b8;
+    color: #fff;
+    font-family: "Montserrat", "sans-seriff";
+    cursor: pointer;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 0.2rem;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+i {
+    background-color: transparent;
+    margin-left: 1rem;
+}
+
+span:hover {
+    background-color: rgba(23, 162, 184, 0.6);
+    transition: 0.3s;
+}
+
+span:hover .fa-up-right-from-square {
+    transition: 0.7s;
+    transform: rotateZ(15deg);
+}
+
+footer {
+    color: #ffffff4d;
+    padding-top: 3rem;
+    padding-left: 10rem;
+}
+
+@media (max-width: 30rem) {
+    .iframe--wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .iframe--wrapper {
+        height: 75%;
+        width: 80%;
+    }
+
+    span {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 30rem) and (max-width: 60rem) {
+    .iframe--wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .iframe--wrapper {
+        height: 75%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 60rem) {
+    .iframe--wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .iframe--wrapper {
+        width: 80%;
+        height: 70%;
+        padding: 2rem;
+        background-color: red;
+    }
+}
